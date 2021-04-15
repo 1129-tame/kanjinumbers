@@ -21,7 +21,6 @@ if ($kanji == "零") {
     exit;
 }
 
-
 // 桁ごとに配列化
 $kanji_point = preg_replace('/(兆|億|万)/', '$1,', $kanji); // 弐億参百万=>弐億,参百万,
 $kanji_array = explode(',', $kanji_point); //,を目印に配列

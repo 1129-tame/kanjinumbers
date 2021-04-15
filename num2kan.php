@@ -20,6 +20,7 @@ if ($num == 0) {
     exit;
 }
 
+
 while ($str_num) {
 $whilenum++;
     switch ($whilenum) {
