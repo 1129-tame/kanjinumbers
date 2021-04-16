@@ -11,7 +11,7 @@ if (preg_match('/\w/',"$kanji")) {
     echo "HTTP:204";
     exit;
 }
-if (preg_match('/一|二|三|十|/', $kanji)) {
+if (preg_match('/一|二|三|十/', $kanji)) {
     echo "HTTP:204";
     exit;
 }
