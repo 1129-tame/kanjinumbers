@@ -12,3 +12,13 @@ https://w3oqu03goc.execute-api.ap-northeast-1.amazonaws.com/Prod/v1/kanji2number
 https://w3oqu03goc.execute-api.ap-northeast-1.amazonaws.com/Prod/v1/number2kanji/1
 
 最後のパスを変更すると対応する数字が出力されます。
+
+使用環境
+
+OS：Windows
+
+テキストエディタ：VSCode
+
+言語：PHP
+
+環境：AWS　Lambda
