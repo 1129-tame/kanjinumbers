@@ -1,7 +1,7 @@
 <?php
 
 $kanji = $_GET['kan'];
-// $kanji = '参百億参百四拾万参百四拾';
+
 $kakeru = 1;
 $sum = 0;
 $last = 0;
@@ -93,11 +93,12 @@ foreach ($kanji_array as $kan) {
 
     }
 
-
-    if ((!preg_match('/壱兆|壱億|壱万/', $kan))&&($kakeru == 1)) {
+    // 特殊な場合の値の変更
+    if ((!preg_match('/壱兆|壱億|壱万/', $kan))&&($kakeru == 1)&&($kanji !== '壱')) {
         $kakeru = 0;
     }
 
+    // 計算、$lastに足し続ける
     $last += $count * $sum + $count * $kakeru;
     
 

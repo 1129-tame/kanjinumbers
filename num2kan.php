@@ -3,7 +3,6 @@
 $kansuji = '';
 
 $num = $_GET['num'];
-// $num = 10002334;
 $str_num = strlen($num);
 $whilenum = 0;
 
@@ -110,16 +109,14 @@ $whilenum++;
                     break;
                 }
                 $str_num--;
-
+                // 弐億万->弐億
                 if (preg_match('/.*0{4}....\z/', $num)) {
                     $kansuji = str_replace('万', '', $kansuji);
                 }
+                // 参兆億弐万->参兆弐万
                 if (preg_match('/0{4}........\z/', $num)) {
                     $kansuji = str_replace('億', '', $kansuji);
                 }
                 
 }
 echo "$kansuji";
-// header('Location: api_test.php?kan=' . "$kansuji");
-// print $json = json_encode($kansuji, JSON_PRETTY_PRINT);
-// print json_decode($json);
